@@ -24,8 +24,8 @@ public class AccountRegistrationTest extends TestBase {
         String expectedResult = "Užsakymai";
         String actualResult;
 
-        AccountRegistrationPage.writeEmailText(email);
-        AccountRegistrationPage.inputPassword(password);
+        AccountRegistrationPage.enterEmail(email);
+        AccountRegistrationPage.enterPassword(password);
         AccountRegistrationPage.clickOnButtonRegister();
         actualResult = AccountRegistrationPage.readMessageOrders();
 
@@ -43,8 +43,8 @@ public class AccountRegistrationTest extends TestBase {
         String actualResult;
 
 
-        AccountRegistrationPage.writeEmailText(email);
-        AccountRegistrationPage.inputPassword(password);
+        AccountRegistrationPage.enterEmail(email);
+        AccountRegistrationPage.enterPassword(password);
         AccountRegistrationPage.clickOnButtonRegister();
         actualResult = AccountRegistrationPage.readMessageError();
 

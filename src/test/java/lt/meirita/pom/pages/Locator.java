@@ -12,5 +12,14 @@ public class Locator {
             public static By paragraphOrders = By.xpath("//h2[contains(text(),'Užsakymai')]");
             public static By paragraphError = By.xpath("//strong[contains (text(),'Klaida')]");
         }
+
+        public static class Login {
+
+            public static By emailInput = By.xpath("//input[@id='username']");
+            public static By passwordInput = By.xpath("//input[@id='password']");
+            public static By buttonLogin = By.xpath("//button[@name='login']");
+            public static By paragraphOrders = By.xpath("//h2[contains(text(),'Užsakymai')]");
+            public static By paragraphError = By.xpath("//strong[contains (text(),'Error')]");
+        }
     }
 }

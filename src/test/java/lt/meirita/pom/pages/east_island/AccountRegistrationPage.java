@@ -9,14 +9,14 @@ public class AccountRegistrationPage {
         Common.openUrl(url);
     }
 
-    public static void writeEmailText(String email) {
+    public static void enterEmail(String email) {
         Common.sendKeysToElement(
                 Locator.EastIsland.AccountRegistration.emailInput,
                 email
         );
     }
 
-    public static void inputPassword(String password) {
+    public static void enterPassword(String password) {
         Common.sendKeysToElement(
                 Locator.EastIsland.AccountRegistration.passwordInput,
                 password
