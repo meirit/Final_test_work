@@ -21,5 +21,13 @@ public class Locator {
             public static By paragraphOrders = By.xpath("//h2[contains(text(),'Užsakymai')]");
             public static By paragraphError = By.xpath("//strong[contains (text(),'Error')]");
         }
+
+        public static class Logout {
+            public static By emailInput = By.xpath("//input[@id='username']");
+            public static By passwordInput = By.xpath("//input[@id='password']");
+            public static By buttonLogin = By.xpath("//button[@name='login']");
+            public static By buttonLogout = By.xpath("//a[@class='logout']");
+            public static By paragraphLogin = By.xpath("//h2[contains (text(),'Prisijungti')]");
+        }
     }
 }
