@@ -1,4 +1,7 @@
-package lt.meirita.pom.pages;
+package lt.meirita.pom.pages.east_island;
+
+import lt.meirita.pom.pages.Common;
+import lt.meirita.pom.pages.Locator;
 
 public class LoginPage {
     public static void openChrome(String url) {

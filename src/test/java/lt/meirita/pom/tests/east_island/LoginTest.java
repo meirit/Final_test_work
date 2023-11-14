@@ -1,6 +1,6 @@
 package lt.meirita.pom.tests.east_island;
 
-import lt.meirita.pom.pages.LoginPage;
+import lt.meirita.pom.pages.east_island.LoginPage;
 import lt.meirita.pom.tests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
