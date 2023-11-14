@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
+
 public class Driver {
     private static ThreadLocal<WebDriver> drivers = new ThreadLocal<>();
 
@@ -22,7 +24,7 @@ public class Driver {
         drivers.get().get("chrome://settings/");
         ((JavascriptExecutor) drivers.get()).executeScript("chrome.settingsPrivate.setDefaultZoom(0.7)");
 
-//        drivers.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+        drivers.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
     }
 
     public static WebDriver getDriver() {
