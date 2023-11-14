@@ -20,8 +20,8 @@ public class AccountRegistrationTest extends TestBase {
 
     public void testPositiveAccountRegistration() {
 
-        String email = "meiritatester123@gmail.com";
-        String password = "28TestClass$223";
+        String email = "meiritatester12334@gmail.com";
+        String password = "28TestCla33ss$223";
         String expectedResult = "Užsakymai";
         String actualResult;
 

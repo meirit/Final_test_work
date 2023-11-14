@@ -20,7 +20,7 @@ public class LogoutTest extends TestBase {
 
         String email = "meiritatester@gmail.com";
         String password = "28TestClass$";
-        String expectedResult = "";
+        String expectedResult = "Prisijungti";
         String actualResult;
 
         LogoutPage.enterEmail(email);
