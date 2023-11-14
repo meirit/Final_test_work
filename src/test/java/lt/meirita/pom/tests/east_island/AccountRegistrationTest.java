@@ -4,6 +4,7 @@ import lt.meirita.pom.pages.east_island.AccountRegistrationPage;
 import lt.meirita.pom.tests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class AccountRegistrationTest extends TestBase {
@@ -32,14 +33,19 @@ public class AccountRegistrationTest extends TestBase {
         Assert.assertEquals(actualResult,expectedResult);
 
     }
+    @DataProvider(name = "accountRegistrationTest")
+    public Object[][] provideDataAccountRegistration() {
+        return new Object[][]{
+                {"  ", "28TestClass$223", "Klaida" },
+                {"registrator@yahoo","28TestClass$223", "Klaida"}
 
-    @Test
+        };
+    }
 
-    public void testNegativeAccountRegistration(){
+    @Test (dataProvider = "accountRegistrationTest")
 
-        String email = " ";
-        String password = "28TestClass$223";
-        String expectedResult = "Klaida";
+    public void testNegativeAccountRegistration(String email, String password, String expectedResult ){
+
         String actualResult;
 
 
