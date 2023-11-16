@@ -38,5 +38,23 @@ public class Locator {
             public static By buttonAddToBag = By.xpath("//button[@type='submit']");
             public static By paragraphBasket = By.xpath("//h1[contains (text(),'Basket')]");
         }
+
+        public static class CustomerInformation {
+
+            public static By emailInput = By.xpath("//input[@id='username']");
+            public static By passwordInput = By.xpath("//input[@id='password']");
+            public static By buttonLogin = By.xpath("//button[@name='login']");
+            public static By buttonEditData = By.xpath("//a[contains(text(),'KOREGUOTI')]");
+            public static By nameInput = By.xpath("//input[@name='billing_first_name']");
+            public static By emailAddressEmail = By.xpath("//input[@name='billing_email']");
+            public static By phoneInput = By.xpath("//input[@name='billing_phone']");
+            public static By inputReceiverName = By.xpath("//input[@name='shipping_first_name']");
+            public static By inputShippingPhone = By.xpath("//input[@name='shipping_phone']");
+            public static By addressInput = By.xpath("//input[@name='shipping_address_1']");
+            public static By cityInput = By.xpath("//input[@name='shipping_city']");
+            public static By postCodeInput = By.xpath("//input[@name='shipping_postcode']");
+            public static By buttonSave = By.xpath("(//button[contains(text(), 'IŠSAUGOTI')])[2]");
+            public static By paragraphProfileName = By.xpath("//h1[contains(text(),'Laura Jonaite')]");
+        }
     }
 }

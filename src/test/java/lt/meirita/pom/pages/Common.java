@@ -4,7 +4,6 @@ import lt.meirita.pom.utils.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
 
 public class Common {
     public static void setUpChrome() {
@@ -20,10 +19,6 @@ public class Common {
     }
     private static WebElement getElement(By locator){
         return Driver.getDriver().findElement(locator);
-    }
-
-    private static List<WebElement> getElements(By locator){
-        return Driver.getDriver().findElements(locator);
     }
 
     public static  void sendKeysToElement(By locator, String text){
