@@ -57,7 +57,7 @@ Expected result: Logout is successful, login page is open.
    - Click on button "Login";
    - Click on button "Edit data";
    - Enter name;
-   - Enter email'
+   - Enter email;
    - Enter mobile phone;
    - Enter shipping name;
    - Enter shipping phone number;

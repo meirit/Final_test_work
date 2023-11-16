@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test EastIsland" parallel="methods" thread-count="2">
-    <test name="EastIsland Website Test">
+<suite name="Automation Tests for EastIsland" parallel="methods" thread-count="2">
+    <test name="EastIsland Test">
         <classes>
             <class name="lt.meirita.pom.tests.east_island.AccountRegistrationTest"/>
             <class name="lt.meirita.pom.tests.east_island.LoginTest"/>

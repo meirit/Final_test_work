@@ -10,7 +10,8 @@ public class GiftCouponPage {
     }
 
     public static void select200EurAmountButton() {
-        Common.clickOnElement(Locator.EastIsland.GiftCoupon.amountButton);
+        Common.clickOnElement(Locator.EastIsland.GiftCoupon.amountButton
+        );
     }
 
     public static void writeReceiverName(String name) {

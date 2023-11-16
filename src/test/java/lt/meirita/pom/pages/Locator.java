@@ -14,7 +14,6 @@ public class Locator {
         }
 
         public static class Login {
-
             public static By emailInput = By.xpath("//input[@id='username']");
             public static By passwordInput = By.xpath("//input[@id='password']");
             public static By buttonLogin = By.xpath("//button[@name='login']");
@@ -31,7 +30,6 @@ public class Locator {
         }
 
         public static class GiftCoupon {
-
             public static By amountButton = By.xpath("//span[contains(text(), '200 €')]");
             public static By nameInput = By.xpath("//input[@name='title[]']");
             public static By textInput = By.xpath("//textarea[@name='desc[]']");
@@ -40,7 +38,6 @@ public class Locator {
         }
 
         public static class CustomerInformation {
-
             public static By emailInput = By.xpath("//input[@id='username']");
             public static By passwordInput = By.xpath("//input[@id='password']");
             public static By buttonLogin = By.xpath("//button[@name='login']");
