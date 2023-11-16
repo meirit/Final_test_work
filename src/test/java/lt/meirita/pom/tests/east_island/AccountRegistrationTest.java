@@ -20,8 +20,8 @@ public class AccountRegistrationTest extends TestBase {
 
     public void testPositiveAccountRegistration() {
 
-        String email = "meiritatester123345678@gmail.com";
-        String password = "28TestCla33ss$2234567";
+        String email = "meiritatester1233456789@gmail.com";
+        String password = "28TestCla33ss$22345678";
         String expectedResult = "Užsakymai";
         String actualResult;
 
@@ -30,21 +30,22 @@ public class AccountRegistrationTest extends TestBase {
         AccountRegistrationPage.clickOnButtonRegister();
         actualResult = AccountRegistrationPage.readMessageOrders();
 
-        Assert.assertEquals(actualResult,expectedResult);
+        Assert.assertEquals(actualResult, expectedResult);
 
     }
+
     @DataProvider(name = "accountRegistrationTest")
     public Object[][] provideDataAccountRegistration() {
         return new Object[][]{
-                {"  ", "28TestClass$223", "Klaida" },
-                {"registrator@yahoo","28TestClass$223", "Klaida"}
+                {"  ", "28TestClass$223", "Klaida"},
+                {"registrator@yahoo", "28TestClass$223", "Klaida"}
 
         };
     }
 
-    @Test (dataProvider = "accountRegistrationTest")
+    @Test(dataProvider = "accountRegistrationTest")
 
-    public void testNegativeAccountRegistration(String email, String password, String expectedResult ){
+    public void testNegativeAccountRegistration(String email, String password, String expectedResult) {
 
         String actualResult;
 
@@ -61,7 +62,6 @@ public class AccountRegistrationTest extends TestBase {
                 )
         );
     }
-
 
 
 }

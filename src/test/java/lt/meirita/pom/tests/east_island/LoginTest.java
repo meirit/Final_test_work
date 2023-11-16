@@ -13,9 +13,10 @@ public class LoginTest extends TestBase {
         LoginPage.openChrome("https://eastisland.lt/paskyra/uzsakymai/");
 
     }
+
     @Test
 
-    public void testPositiveLogin(){
+    public void testPositiveLogin() {
         String email = "meiritatester@gmail.com";
         String password = "28TestClass$";
         String expectedResult = "Užsakymai";
@@ -26,12 +27,13 @@ public class LoginTest extends TestBase {
         LoginPage.clickOnButtonLogin();
         actualResult = LoginPage.readMessageOrders();
 
-        Assert.assertEquals(actualResult,expectedResult);
+        Assert.assertEquals(actualResult, expectedResult);
 
     }
+
     @Test
 
-    public void testNegativeLogin(){
+    public void testNegativeLogin() {
         String email = "meiritatester@gmail.com";
         String password = "  ";
         String expectedResult = "Error";

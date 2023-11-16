@@ -1,6 +1,5 @@
 package lt.meirita.pom.tests.east_island;
 
-import lt.meirita.pom.pages.Common;
 import lt.meirita.pom.pages.east_island.CustomerInformationPage;
 import lt.meirita.pom.tests.TestBase;
 import org.testng.Assert;
@@ -16,10 +15,10 @@ public class CustomerInformationTest extends TestBase {
     }
 
     @Test
-    public void testEditCustomerInformation() {
+    public void testAddCustomerInformation() {
 
-        String email = "meiritatester123345678@gmail.com";
-        String password = "28TestCla33ss$2234567";
+        String email = "meiritatester1233456789@gmail.com";
+        String password = "28TestCla33ss$22345678";
         String name = "Laura Jonaite";
         String phoneNumber = "+37067239745";
         String address = "Aguonu 13-5";
@@ -41,7 +40,7 @@ public class CustomerInformationTest extends TestBase {
         CustomerInformationPage.enterShippingCity(city);
         CustomerInformationPage.enterPostCode(postCode);
         CustomerInformationPage.clickOnButtonSave();
-        actualResult = CustomerInformationPage.readCustomerPtofileName();
+        actualResult = CustomerInformationPage.readCustomerProfileName();
 
         Assert.assertEquals(actualResult, expectedResult);
 

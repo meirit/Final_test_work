@@ -6,6 +6,7 @@
             <class name="lt.meirita.pom.tests.east_island.AccountRegistrationTest"/>
             <class name="lt.meirita.pom.tests.east_island.LoginTest"/>
             <class name="lt.meirita.pom.tests.east_island.LogoutTest"/>
+            <class name="lt.meirita.pom.tests.east_island.CustomerInformationTest"/>
             <class name="lt.meirita.pom.tests.east_island.GiftCouponTest"/>
         </classes>
     </test>

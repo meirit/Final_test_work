@@ -29,7 +29,7 @@ public class LogoutTest extends TestBase {
         LogoutPage.clickOnButtonLogout();
         actualResult = LogoutPage.readMessageLogin();
 
-        Assert.assertEquals(actualResult,expectedResult);
+        Assert.assertEquals(actualResult, expectedResult);
 
     }
 

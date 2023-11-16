@@ -15,7 +15,7 @@ public class GiftCouponTest extends TestBase {
 
     @Test
 
-    public void testAddGiftCouponToCart(){
+    public void testAddGiftCouponToCart() {
         String name = "Diana";
         String text = "Happy Birthday!";
         String expectedResult = "Basket";

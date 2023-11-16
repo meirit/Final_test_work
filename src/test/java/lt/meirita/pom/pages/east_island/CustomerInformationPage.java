@@ -92,7 +92,7 @@ public class CustomerInformationPage {
         Common.clickOnElement(Locator.EastIsland.CustomerInformation.buttonSave);
     }
 
-    public static String readCustomerPtofileName() {
+    public static String readCustomerProfileName() {
         return Common.getTextFromElement((Locator.EastIsland.CustomerInformation.paragraphProfileName));
     }
 }
