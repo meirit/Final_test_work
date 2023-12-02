@@ -18,7 +18,7 @@ public class LogoutTest extends TestBase {
     @Test
     public void testLogout() {
 
-        String email = "tester1313@gmail.com";
+        String email = "tester13139@gmail.com";
         String password = "31TestCla33ss$13";
         String expectedResult = "Prisijungti";
         String actualResult;

@@ -17,7 +17,7 @@ public class CustomerInformationTest extends TestBase {
     @Test
     public void testAddCustomerInformation() {
 
-        String email = "tester1313@gmail.com";
+        String email = "tester13139@gmail.com";
         String password = "31TestCla33ss$13";
         String name = "Laura Jonaite";
         String phoneNumber = "+37067239745";

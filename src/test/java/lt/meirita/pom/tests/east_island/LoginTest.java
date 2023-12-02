@@ -17,7 +17,7 @@ public class LoginTest extends TestBase {
     @Test
 
     public void testPositiveLogin() {
-        String email = "tester1313@gmail.com";
+        String email = "tester13139@gmail.com";
         String password = "31TestCla33ss$13";
         String expectedResult = "Užsakymai";
         String actualResult;
